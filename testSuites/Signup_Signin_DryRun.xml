@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+<listeners>
+<listener class-name="MYBharat.TestComponents.Listeners"/>
+</listeners>
+
+
+  <test thread-count="5" name="Signup And Signin">
+    <classes>
+      <class name="MYBharat.tests.SignupAndSigninTest"/>
+    </classes>
+  </test> 
+  
+
+  
+</suite> <!-- Suite -->

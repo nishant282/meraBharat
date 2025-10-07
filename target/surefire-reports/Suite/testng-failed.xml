@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="YUVA.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Org Creation And Level Creation(failed)" verbose="0">
+    <classes>
+      <class name="YUVA.tests.OrgCreationAndLevelCreationByNodalOfficerTest">
+        <methods>
+          <include name="policeOrgCreation"/>
+          <include name="launchApplication"/>
+          <include name="levelCreation"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- YUVA.tests.OrgCreationAndLevelCreationByNodalOfficerTest -->
+    </classes>
+  </test> <!-- Org Creation And Level Creation(failed) -->
+  <test thread-count="5" name="Partner Registration And Verification And ELO Creation(failed)" verbose="0">
+    <classes>
+      <class name="YUVA.tests.PartnerRegistrationAndVerificationAndELOCreation">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="partnerVerification"/>
+          <include name="registerAsGovtOrg"/>
+          <include name="tearDown"/>
+          <include name="ELOcreate"/>
+        </methods>
+      </class> <!-- YUVA.tests.PartnerRegistrationAndVerificationAndELOCreation -->
+    </classes>
+  </test> <!-- Partner Registration And Verification And ELO Creation(failed) -->
+  <test thread-count="5" name="Youth Registration Using Mobile Number Test(failed)" verbose="0">
+    <classes>
+      <class name="YUVA.tests.YouthRegistrationUsingMobileNumberTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="registerAsyouth"/>
+        </methods>
+      </class> <!-- YUVA.tests.YouthRegistrationUsingMobileNumberTest -->
+    </classes>
+  </test> <!-- Youth Registration Using Mobile Number Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
