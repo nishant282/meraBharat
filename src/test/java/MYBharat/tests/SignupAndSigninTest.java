@@ -100,5 +100,57 @@ public class SignupAndSigninTest extends BaseTest {
         Login_Partner Login = new Login_Partner(driver);
         System.out.println("NSSPO email is " + email);
         Login.login(email);
+        
+        
+    }
+    
+    
+    @Test(enabled = true, priority = 5)
+    public void NSSProgramOfficer_Signup_Logout_Signin55() throws IOException, InterruptedException {
+        // Use the landingPage object from BaseTest
+        landingPage.goTo();
+        Register_NSSProgramOfficer registerNSSPO = new Register_NSSProgramOfficer(driver);
+        String email = registerNSSPO.getSaltString();
+        registerNSSPO.registration(email);
+
+        Logout_Partner logout = new Logout_Partner(driver);
+        logout.logout();
+        Login_Partner Login = new Login_Partner(driver);
+        System.out.println("NSSPO email is " + email);
+        Login.login(email);
+    }
+    
+    
+    
+    @Test(enabled = true, priority = 5)
+    public void NSSProgramOfficer_Signup_Logout_Signin56() throws IOException, InterruptedException {
+        // Use the landingPage object from BaseTest
+        landingPage.goTo();
+        Register_NSSProgramOfficer registerNSSPO = new Register_NSSProgramOfficer(driver);
+        String email = registerNSSPO.getSaltString();
+        registerNSSPO.registration(email);
+
+        Logout_Partner logout = new Logout_Partner(driver);
+        logout.logout();
+        Login_Partner Login = new Login_Partner(driver);
+        System.out.println("NSSPO email is " + email);
+        Login.login(email);
+    }
+    
+    
+    
+    @Test(enabled = true, priority = 5)
+    public void NSSProgramOfficer_Signup_Logout_Signin57() throws IOException, InterruptedException {
+        // Use the landingPage object from BaseTest
+        landingPage.goTo();
+        Register_NSSProgramOfficer registerNSSPO = new Register_NSSProgramOfficer(driver);
+        String email = registerNSSPO.getSaltString();
+        registerNSSPO.registration(email);
+
+        Logout_Partner logout = new Logout_Partner(driver);
+        logout.logout();
+        Login_Partner Login = new Login_Partner(driver);
+        System.out.println("NSSPO email is " + email);
+        Login.login(email);
     }
 }
